@@ -9,6 +9,8 @@ import { SectionWrapper } from '../hoc';
 import { projects } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
 
+import Stars from './canvas/Stars';
+
 const ProjectCard = ({
   index,
   name,
@@ -86,7 +88,6 @@ const Works = () => {
         <p className={styles.sectionSubText}>My work</p>
         <h2 className={styles.sectionHeadText}>Projects</h2>
       </motion.div>
-
       <div className='w-full flex flex-col '>
         <div className='w-full flex '>
           <motion.p
@@ -110,6 +111,7 @@ const Works = () => {
           ))}
         </div>
       </div>
+      <Stars />;
     </div>
   );
 };

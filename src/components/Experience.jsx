@@ -11,6 +11,7 @@ import { styles } from '../styles';
 import { experiences } from '../constants';
 import { SectionWrapper } from '../hoc';
 import { textVariant } from '../utils/motion';
+import Stars from './canvas/Stars';
 
 const ExperienceCard = ({ experience }) => (
   <VerticalTimelineElement
@@ -71,6 +72,7 @@ const Experience = () => {
           ))}
         </VerticalTimeline>
       </div>
+      <Stars />
     </>
   );
 };

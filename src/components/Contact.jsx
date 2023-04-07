@@ -41,7 +41,7 @@ const Contact = () => {
               type='text'
               name='name'
               onChange={handleChange}
-              placeHolder='Your name'
+              placeholder='Your name'
               value={form.name}
               className='bg-tertiary py-4 px-6 placeholder:text-secondary  rounded-lg outline-none border-none font-medium'
             />
@@ -53,7 +53,7 @@ const Contact = () => {
               type='text'
               email='email'
               onChange={handleChange}
-              placeHolder='Your email'
+              placeholder='Your email'
               value={form.email}
               className='bg-tertiary py-4 px-6 placeholder:text-secondary  rounded-lg outline-none border-none font-medium'
             />
@@ -65,7 +65,7 @@ const Contact = () => {
               rows='7'
               message='message'
               onChange={handleChange}
-              placeHolder='Your message'
+              placeholder='Your message'
               value={form.message}
               className='bg-tertiary py-4 px-6 placeholder:text-secondary  rounded-lg outline-none border-none font-medium'
             />
