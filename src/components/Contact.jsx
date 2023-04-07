@@ -1,6 +1,4 @@
-import React, { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
-import emailjs from '@emailjs/browser';
 
 import { styles } from '../styles';
 import { EarthCanvas } from './canvas';
@@ -8,17 +6,6 @@ import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
 
 const Contact = () => {
-  const formRef = useRef();
-  const [form, setForm] = useState({
-    name: '',
-    email: '',
-    message: '',
-  });
-
-  const [loading, setLoading] = useState(false);
-  const handleChange = (e) => {};
-  const handleSubmit = (e) => {};
-
   return (
     <div
       className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
@@ -31,50 +18,43 @@ const Contact = () => {
         <h3 className={styles.sectionHeadText}>Drop me a line!</h3>
 
         <form
-          ref={formRef}
-          onSubmit={handleSubmit}
+          action='https://getform.io/f/25be0a71-6de6-4af1-a5fd-312bb4fcf63b'
+          method='POST'
           className='mt-12 flex flex-col gap-8'
         >
           <label className='flex flex-col'>
-            <span className='font-medium mb-4'> Name</span>
+            <span className='text-white font-medium mb-4'>Your Name</span>
             <input
               type='text'
               name='name'
-              onChange={handleChange}
               placeholder='Your name'
-              value={form.name}
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary  rounded-lg outline-none border-none font-medium'
+              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
 
           <label className='flex flex-col'>
-            <span className='font-medium mb-4'> Email</span>
+            <span className='text-white font-medium mb-4'>Your email</span>
             <input
-              type='text'
-              email='email'
-              onChange={handleChange}
-              placeholder='Your email'
-              value={form.email}
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary  rounded-lg outline-none border-none font-medium'
+              type='email'
+              name='email'
+              placeholder='Your email '
+              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
-
           <label className='flex flex-col'>
-            <span className='font-medium mb-4'> Message</span>
+            <span className='text-white font-medium mb-4'>Your Message</span>
             <textarea
-              rows='7'
-              message='message'
-              onChange={handleChange}
-              placeholder='Your message'
-              value={form.message}
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary  rounded-lg outline-none border-none font-medium'
+              rows={7}
+              name='message'
+              placeholder='What you want to say?'
+              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
           <button
             type='submit'
             className='bg-tertiary py-3 px-8 outline-none w-fit font-bold shadow-md shadow-primary rounded-xl'
           >
-            {loading ? 'Sending..' : 'Send'}{' '}
+            Sent
           </button>
         </form>
       </motion.div>
