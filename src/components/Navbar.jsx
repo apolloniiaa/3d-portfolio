@@ -43,12 +43,12 @@ const Navbar = () => {
           }}
         >
           <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
-          <p className='text-white text-[18px] font-bold cursor-pointer flex '>
-            pollonia &nbsp;
+          {/* <p className='text-white text-[18px] font-bold cursor-pointer flex '>
+            Apollonia &nbsp;
             <span className='cursor-pointer font-bold text-white sm:block hidden text-[18px]'>
               | dev
             </span>
-          </p>
+          </p> */}
         </Link>
 
         <ul className='list-none hidden sm:flex flex-row gap-10'>

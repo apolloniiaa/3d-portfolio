@@ -111,7 +111,7 @@ const Works = () => {
           ))}
         </div>
       </div>
-      {/* <Stars />; */}
+      <Stars />
     </div>
   );
 };

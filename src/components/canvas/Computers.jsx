@@ -1,5 +1,4 @@
 import React, { Suspense, useEffect, useState } from 'react';
-import * as THREE from 'three';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import { Preload, useGLTF } from '@react-three/drei';
@@ -9,8 +8,6 @@ const Computers = ({ isMobile }) => {
   const computer = useGLTF('./desktop_pc/scene.gltf');
   return (
     <mesh>
-      {/* <boxGeometry />
-      <meshStandardMaterial color="orange" /> */}
       <hemisphereLight intensity={0.15} groundColor='black' />
       <spotLight
         position={[-20, 50, 10]}
@@ -23,8 +20,6 @@ const Computers = ({ isMobile }) => {
       <pointLight intensity={1} />
       <primitive
         object={computer.scene}
-        // scale={0.4}
-        // position={[0, -1.25, 0.25]}
         rotation={[-0.01, -0.2, -0.1]}
         scale={isMobile ? 0.3 : 0.75}
         position={isMobile ? [0, 0, 0, 1] : [0, -3.25, -1.5]}

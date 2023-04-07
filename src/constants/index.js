@@ -18,6 +18,7 @@ import {
   web9,
   web6,
   web12,
+  logo,
 } from '../assets';
 
 export const navLinks = [
@@ -128,7 +129,7 @@ const experiences = [
   {
     title: 'Work Experience',
     company_name: 'Freelance web developer and Designer',
-    icon: meta,
+    icon: logo,
     iconBg: '#E6DEDD',
     date: 'March 2022 - Now',
     points: [
@@ -138,21 +139,21 @@ const experiences = [
   },
 ];
 
-const testimonials = [
+const offers = [
   {
-    testimonial: 'Working with the latest trending technologies',
+    technologies: 'Working with the latest trending technologies',
     name: 'Newest Technologie',
     image:
       'https://img.freepik.com/free-vector/3d-graphic-design-concept-pastel-colors_52683-30331.jpg',
   },
   {
-    testimonial: 'Creating modern, responsive design',
+    technologies: 'Creating modern, responsive design',
     name: 'Beautiful Designs',
     image:
       'https://img.freepik.com/free-vector/gradient-top-view-laptop-background_52683-6291.jpg?w=360',
   },
   {
-    testimonial: `Let's make your dream website a reality!`,
+    technologies: `Let's make your dream website a reality!`,
     name: 'Code your dream project',
     image: 'https://old.opencascade.com/sites/default/files/remote.png',
   },
@@ -257,4 +258,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, offers, projects };
