@@ -2,7 +2,7 @@ import React, { Suspense, useEffect, useState } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import { Preload, useGLTF } from '@react-three/drei';
-import CanvasLoader from '../Loader';
+import { Text } from '@react-three/drei';
 
 const Computers = ({ isMobile }) => {
   const computer = useGLTF('./desktop_pc/scene.gltf');
@@ -28,25 +28,25 @@ const Computers = ({ isMobile }) => {
   );
 };
 
+const CanvasLoader = () => {
+  <Text color='white' anchorX='center' anchorY='middle' position={[0, 0, -5]}>
+    Loading...
+  </Text>;
+};
+
 const ComputersCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    // Add a listener for changes to the screen size
     const mediaQuery = window.matchMedia('(max-width: 500px)');
 
-    // Set the initial value of the `isMobile` state variable
     setIsMobile(mediaQuery.matches);
 
-    // Define a callback function to handle changes to the media query
     const handleMediaQueryChange = (event) => {
       setIsMobile(event.matches);
     };
-
-    // Add the callback function as a listener for changes to the media query
     mediaQuery.addEventListener('change', handleMediaQueryChange);
 
-    // Remove the listener when the component is unmounted
     return () => {
       mediaQuery.removeEventListener('change', handleMediaQueryChange);
     };
@@ -63,21 +63,16 @@ const ComputersCanvas = () => {
       }}
       gl={{ preserveDrawingBuffer: true }}
     >
-      {/* <ambientLight intensity={0.5} />
-      <pointLight position={[10, 10, 10]} />
-      <Computers  />
-      <OrbitControls /> */}
+      <Preload all />
 
-      <Computers isMobile={isMobile} />
       <Suspense fallback={<CanvasLoader />}>
+        <Computers isMobile={isMobile} />
         <OrbitControls
           enableZoom={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
       </Suspense>
-
-      <Preload all />
     </Canvas>
   );
 };
