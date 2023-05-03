@@ -25,6 +25,7 @@ import web3 from './web3.jpg';
 import web6 from './web6.jpg';
 import web9 from './web9.jpg';
 import web12 from './web12.jpg';
+import web13 from './web13.jpg';
 
 export {
   logo,
@@ -50,5 +51,6 @@ export {
   web8,
   web9,
   web12,
+  web13,
   web3,
 };

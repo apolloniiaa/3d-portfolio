@@ -18,6 +18,7 @@ import {
   web9,
   web6,
   web12,
+  web13,
   logo,
 } from '../assets';
 
@@ -255,6 +256,24 @@ const projects = [
     image: web12,
     source_demo_link: 'https://plan-it-perfect-next-js-mw2g.vercel.app/',
     source_code_link: 'https://github.com/apolloniiaa/planItPerfect-next-js',
+  },
+  {
+    name: 'Design Your Own',
+    description:
+      'This page is all about giving you the ability to create a shirt that is truly your own. I believe that your clothes should be a reflection of your personality and style, and this design tools make it easy to create a one-of-a-kind shirt that fits your vision.',
+    tags: [
+      {
+        name: 'react three fiber',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'tailwind',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: web13,
+    source_demo_link: 'https://3d-website-liart.vercel.app/',
+    source_code_link: 'https://github.com/apolloniiaa/3d-website',
   },
 ];
 
