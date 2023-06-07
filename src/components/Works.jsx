@@ -91,8 +91,9 @@ const Works = () => {
       <div className='w-full flex flex-col '>
         <div className='w-full flex '>
           <motion.p
-            variants={fadeIn('', '', 0.1, 1)}
-            className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
+            // variants={fadeIn('', '', 0.1, 1)}
+            // className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
+            className=' text-secondary text-[17px] max-w-3xl leading-[30px]'
           >
             Please take a moment to check out my latest work. Some of them are
             rather small, some of them are bigger, some of them are responsive,
@@ -111,7 +112,7 @@ const Works = () => {
           ))}
         </div>
       </div>
-      <Stars />
+      {/* <Stars /> */}
     </div>
   );
 };

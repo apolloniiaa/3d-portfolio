@@ -161,9 +161,9 @@ const offers = [
 
 const projects = [
   {
-    name: 'Rock, Paper, Scrissors',
+    name: 'Woodland Capture',
     description:
-      'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.',
+      'Woodland Capture showcases the artistry and expertise of a professional wedding photographer, capturing timeless moments and emotions.the page showcases stunning wedding photographs that reflect the love. ',
     tags: [
       {
         name: 'javascript',
@@ -171,42 +171,14 @@ const projects = [
       },
     ],
     image: web8,
-    source_demo_link: 'https://apolloniiaa.github.io/rock.paper.scissors-game/',
-    source_code_link: 'https://github.com/apolloniiaa/rock.paper.scissors-game',
-  },
-  {
-    name: 'Dice Game',
-    description:
-      'Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.',
-    tags: [
-      {
-        name: 'javascript',
-        color: 'blue-text-gradient',
-      },
-    ],
-    image: web9,
-    source_demo_link: 'https://apolloniiaa.github.io/dice.game/',
-    source_code_link: 'https://github.com/apolloniiaa/dice.game',
-  },
-  {
-    name: 'Design Your Own',
-    description:
-      'This page is all about giving you the ability to create a shirt that is truly your own. I believe that your clothes should be a reflection of your personality and style, and this design tools make it easy to create a one-of-a-kind shirt that fits your vision.',
-    tags: [
-      {
-        name: 'react three fiber',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: web13,
-    source_demo_link: 'https://3d-website-liart.vercel.app/',
-    source_code_link: 'https://github.com/apolloniiaa/3d-website',
+    source_demo_link: 'https://framed-euphoria.vercel.app/',
+    source_code_link: 'https://github.com/apolloniiaa/framed-euphoria',
   },
 
   {
-    name: 'Phoenix Bank Page',
+    name: 'Axis Pay',
     description:
-      'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
+      'Axis Pay Bank is a customer-centric digital bank that offers secure banking services. It provides online and mobile banking solutions to empower customers in managing their finances.',
     tags: [
       {
         name: 'javascript',
@@ -222,9 +194,9 @@ const projects = [
     source_code_link: 'https://github.com/apolloniiaa/pb-page',
   },
   {
-    name: 'Phoenix Bank App',
+    name: 'Axis Pay App',
     description:
-      'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
+      'The Axis Pay Application manage your finances on the go. It offers a secure and convenient way to transfer funds, pay bills, view statements,  providing a digital banking experience.',
     tags: [
       {
         name: 'javascript',
@@ -240,9 +212,24 @@ const projects = [
     source_demo_link: 'https://apolloniiaa.github.io/pbank-app/',
   },
   {
+    name: 'Design Your Own',
+    description:
+      'This page is all about giving you the ability to create a shirt that is truly your own.This design tools make it easy to create a one-of-a-kind shirt that fits your vision.',
+    tags: [
+      {
+        name: 'react three fiber',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: web13,
+    source_demo_link: 'https://3d-website-liart.vercel.app/',
+    source_code_link: 'https://github.com/apolloniiaa/3d-website',
+  },
+
+  {
     name: 'Plan it Perfect',
     description:
-      'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
+      'The Plan it perfect planning app simplifies the process of organizing and managing events. Allowing users to create schedules, and coordinate various aspects of their events.',
     tags: [
       {
         name: 'nextjs',
@@ -256,6 +243,20 @@ const projects = [
     image: web12,
     source_demo_link: 'https://plan-it-perfect-next-js-mw2g.vercel.app/',
     source_code_link: 'https://github.com/apolloniiaa/planItPerfect-next-js',
+  },
+  {
+    name: 'Dice Game',
+    description:
+      'Players roll dice to determine their outcomes and strive to achieve the highest score. Entertaining way to test luck and strategy while engaging in friendly competition.',
+    tags: [
+      {
+        name: 'javascript',
+        color: 'blue-text-gradient',
+      },
+    ],
+    image: web9,
+    source_demo_link: 'https://apolloniiaa.github.io/dice.game/',
+    source_code_link: 'https://github.com/apolloniiaa/dice.game',
   },
 ];
 
