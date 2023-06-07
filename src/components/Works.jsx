@@ -21,14 +21,14 @@ const ProjectCard = ({
   source_demo_link,
 }) => {
   return (
-    <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
+    <motion.div>
       <Tilt
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className='lg:bg-tertiary  md:bg-tertiary md:p-5  lg:p-5  rounded-2xl sm:w-[360px] w-full'
+        // options={{
+        //   max: 45,
+        //   scale: 1,
+        //   speed: 450,
+        // }}
+        className='lg:bg-tertiary  md:bg-tertiary  lg:p-5  rounded-2xl sm:w-[360px] w-full'
       >
         <div className='relative w-full h-[230px]'>
           <img
