@@ -26,7 +26,7 @@ const Hero = () => {
       </div>
       <ComputersCanvas />
 
-      <div className='absolute xs:bottom0 bottom-24 w-full flex justify-center '>
+      <div className='absolute xs:bottom0 bottom-60 w-full flex justify-center '>
         <a href='about'>
           <div className='w-[30px] h-[56px] rounded-3xl border-4 border-secondary flex justify-center items-start p-1'>
             <motion.dev
